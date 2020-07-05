@@ -38,7 +38,7 @@ def checkhit(x, y, button, pressed):
 	x=x-240
 	y=y-100
 	if pressed==True:
-		with open('sample.json') as json_file:
+		with open('track_record.json') as json_file:
 			data = json.load(json_file)
 		for p in data['trackobj']:
 			if cframe==p['frame']:
@@ -181,7 +181,7 @@ while True:
 			(x, y, w, h) = [int(v) for v in box]
 			cv2.rectangle(frame, (x, y), (x + w, y + h),
 				(0, 255, 0), 2)
-			#append_track('sample.json',x, y, w,h,vs)	# Data to be written 
+			#append_track('track_record.json',x, y, w,h,vs)	# Data to be written 
 			
 
 		
