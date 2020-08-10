@@ -1,6 +1,1 @@
-Download all the modules. Then Run the following command in the directory of those files on command line or you can run it in pycharm too if you have it;
-python game_opencv --video dashcam_boston.mp4 --tracker csrt
-track_record.json has the positions of the black car in the middle of the road rn.
-there are two functions one for tracking and appending the box positions in the json file.
-One for reading it and shooting to see if you hit or miss.
-Just go through the code and tell me what you don't understand.
+
