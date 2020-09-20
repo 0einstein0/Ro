@@ -1,21 +1,12 @@
 from imutils.video import VideoStream
 from imutils.video import FPS
-# import argparse
 from pynput.mouse import Listener
-
-
 import json 
-
 import imutils
 import time
 import cv2
 import numpy as np
 
-# construct the argument parser and parse the arguments
-# ap = argparse.ArgumentParser()
-# ap.add_argument("-v", "--video", type=str)
-# ap.add_argument("-t", "--tracker", type=str)
-# args = vars(ap.parse_args())
 
 def getFrame(object):
     return object.get(1)
@@ -119,9 +110,6 @@ while True:
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
 
-    # if the 's' key is selected, we are going to "select" a bounding
-    # box to track
- 
     # if the `q` key was pressed, break from the loop
     if key == ord("q"):
         listener.stop()
